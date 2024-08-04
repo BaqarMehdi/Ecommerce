@@ -2,7 +2,7 @@
     <section class="new-arrivals">
       <h2>New Arrivals</h2>
       <div class="card-container">
-        <div class="card" v-for="(item, idx) in newArrivals" :key="idx">
+        <div data-aos="zoom-in-up" class="card" v-for="(item, idx) in newArrivals" :key="idx">
           <img :src="item.imgSrc" :alt="item.altText" />
           <div class="card-details">
             <h3>{{ item.title }}</h3>

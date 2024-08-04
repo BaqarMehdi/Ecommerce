@@ -6,7 +6,7 @@
         <button class="unique-prev" @click="prevSlide">&lt;</button>
         <div class="unique-slider-container">
           <div class="unique-slider-track" :style="{ transform: `translateX(-${index * 220}px)` }">
-            <div class="unique-image-card" v-for="(item, idx) in items" :key="idx">
+            <div data-aos="flip-right" class="unique-image-card" v-for="(item, idx) in items" :key="idx">
               <img :src="item.src" :alt="item.alt" />
               <div class="unique-image-details">
                 <p>{{ item.name }}</p>

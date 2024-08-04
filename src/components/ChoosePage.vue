@@ -2,7 +2,15 @@
     <section class="why-choose-us">
       <h2>Why Should Choose Us</h2>
       <div class="choose-card-container">
-        <div class="choose-card" v-for="(item, idx) in chooseItems" :key="idx">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          :data-aos-delay="idx * 200" 
+          class="choose-card"
+          v-for="(item, idx) in chooseItems"
+          :key="idx"
+        >
           <img :src="item.imgSrc" :alt="item.altText" />
           <div class="choose-card-details">
             <h3>{{ item.title }}</h3>
@@ -15,17 +23,37 @@
   
   <script>
   export default {
-    name: 'ChoosePage',
+    name: "ChoosePage",
     data() {
       return {
         chooseItems: [
-          { imgSrc: require('@/assets/truck.png'), altText: 'Reason 1', title: 'Free Shipping', description: 'Lorem ipsum dolor sit amet consectetur' },
-          { imgSrc: require('@/assets/pay.png'), altText: 'Reason 2', title: 'Easy Payment', description: 'Lorem ipsum dolor sit amet consectetur' },
-          { imgSrc: require('@/assets/shield.png'), altText: 'Reason 3', title: 'Money Back Gurantee', description: 'Lorem ipsum dolor sit amet consectetur' },
-          { imgSrc: require('@/assets/quality.png'), altText: 'Reason 4', title: 'Finest Quality', description: 'Lorem ipsum dolor sit amet consectetur' }
-        ]
+          {
+            imgSrc: require("@/assets/truck.png"),
+            altText: "Reason 1",
+            title: "Free Shipping",
+            description: "Lorem ipsum dolor sit amet consectetur",
+          },
+          {
+            imgSrc: require("@/assets/pay.png"),
+            altText: "Reason 2",
+            title: "Easy Payment",
+            description: "Lorem ipsum dolor sit amet consectetur",
+          },
+          {
+            imgSrc: require("@/assets/shield.png"),
+            altText: "Reason 3",
+            title: "Money Back Gurantee",
+            description: "Lorem ipsum dolor sit amet consectetur",
+          },
+          {
+            imgSrc: require("@/assets/quality.png"),
+            altText: "Reason 4",
+            title: "Finest Quality",
+            description: "Lorem ipsum dolor sit amet consectetur",
+          },
+        ],
       };
-    }
+    },
   };
   </script>
   

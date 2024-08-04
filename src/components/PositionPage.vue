@@ -1,13 +1,13 @@
 <template>
-    <section class="position-section">
-      <div class="image-card">
+    <section class="position-section" >
+      <div  class="image-card" data-aos="fade-right">
         <img src="../assets/men-coll.png" alt="Person pointing" />
         <div class="text-space-one">
           <p>Men's Casual</p>
           <p>fashion Style</p>
         </div>
       </div>
-      <div class="image-card">
+      <div class="image-card" data-aos="fade-left">
         <img src="../assets/women-coll.png" alt="Person pointing" />
         <div class="text-space-two">
           <p>Women's Casual</p>

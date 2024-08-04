@@ -3,7 +3,12 @@
       <h2>Our Partners</h2>
       <div class="logo-gallery-container">
         <div class="logo-gallery-track">
-          <div class="logo-item" v-for="(logo, index) in logos" :key="index">
+          <div
+            data-aos="fade-left"
+            class="logo-item"
+            v-for="(logo, index) in logos"
+            :key="index"
+          >
             <img :src="logo.src" :alt="logo.alt" />
           </div>
         </div>
