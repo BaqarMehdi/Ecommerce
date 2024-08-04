@@ -1,26 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderPage/>
+  <PositionPage/>
+  <SliderPage/>
+  <ChoosePage/>
+  <ArrivalsPage/>
+  <LogosPage/>
+  <FooterPage/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderPage from './components/HeaderPage.vue'
+import PositionPage from './components/PositionPage.vue'
+import SliderPage from './components/SliderPage.vue'
+import ChoosePage from './components/ChoosePage.vue'
+import ArrivalsPage from './components/ArrivalsPage.vue'
+import LogosPage from './components/LogosPage.vue'
+import FooterPage from './components/FooterPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderPage,
+    PositionPage,
+    SliderPage,
+    ChoosePage,
+    ArrivalsPage,
+    LogosPage,
+    FooterPage
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+padding: 0;margin: 0;box-sizing: border-box;
 }
+section{
+   margin: 8rem;
+}
+@media (max-width: 680px) {
+  section {
+    margin: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    margin: 2rem;
+  }
+}
+
 </style>
