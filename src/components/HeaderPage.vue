@@ -1,4 +1,5 @@
 <template>
+
     <header>
       <div class="image-slider">
         <div class="header-text">
@@ -7,7 +8,7 @@
           <p class="txttt-3">UPTO 70% OFF</p>
         </div>
       </div>
-  
+      
       <nav class="navbar">
         <div class="navbar-menu">
           <ul class="navbar-links" :class="{ active: isMenuActive }">
@@ -224,3 +225,5 @@
   }
   </style>
   
+
+

@@ -5,6 +5,8 @@
         <div class="logo-gallery-track">
           <div
             data-aos="fade-left"
+            duration="3000"
+
             class="logo-item"
             v-for="(logo, index) in logos"
             :key="index"
