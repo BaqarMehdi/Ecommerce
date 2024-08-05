@@ -13,7 +13,7 @@ app.mount('#app')
 // Alternatively, initialize AOS directly (no need for global properties)
 AOS.init({
 
-  duration: 1000, // Animation duration in ms
+  // duration: 1000, // Animation duration in ms
   duration: 2000, // Animation duration in ms
   easing: 'ease-in-out', // Animation easing function
 //   once: true // Whether animation should happen only once
